@@ -19,7 +19,7 @@ $(document).ready(function() {
 
         if (foundUser.length > 0) {
             localStorage.setItem("currentUser", JSON.stringify(foundUser));
-            window.location.href = "/dashboard.html";
+            window.location.href = "dashboard.html";
         } else {
             alert("Hatalı kullanıcı adı veya şifre. Lütfen tekrar deneyin.");
         }
