@@ -16,11 +16,12 @@
  }
 
  .deleteBtn {
+  border-radius: 9px;
   position: absolute;
   bottom: 0;
   right: 0;
-  margin-bottom: 1px;
-  margin-right: 1px;
+  margin-bottom: 2px;
+  margin-right: 2px;
  }
  
  .shadow {
@@ -98,3 +99,4 @@
 .Btn:active {
   transform: translate(2px ,2px);
 }
+

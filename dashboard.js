@@ -23,7 +23,7 @@ form.addEventListener("submit", function(event) {
 
 function addNoteToPage(title, note) {
     const deleteBtn = document.createElement("button");
-    deleteBtn.className = "deleteBtn";
+    deleteBtn.className = "deleteBtn btn btn-danger";
     deleteBtn.innerHTML = "Delete";
 
     const noteCard = document.createElement("div");
