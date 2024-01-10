@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dijital Saat</title>
+  <style>
+    #saat {
+      font-size: 48px;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  
+  <div id="saat"></div>
+
+  <script>
+    function displayTime() {
+      var saatElement = document.getElementById("saat");
+      var zaman = new Date();
+      var saat = zaman.getHours();
+      var dakika = zaman.getMinutes();
+      var saniye = zaman.getSeconds();
+
+      saat = saat < 10 ? "0" + saat : saat;
+      dakika = dakika < 10 ? "0" + dakika : dakika;
+      saniye = saniye < 10 ? "0" + saniye : saniye;
+
+      var currentTime = saat + ":" + dakika + ":" + saniye;
+      saatElement.textContent = currentTime;
+    }
+
+    setInterval(displayTime, 1000); // Her saniyede bir güncelle
+    displayTime(); // Sayfa yüklendiğinde saatı göster
+  </script>
+</body>
+</html>

@@ -16,10 +16,18 @@
  }
 
  .deleteBtn {
-  border-radius: 9px;
+  border-radius: 70px;
   position: absolute;
   bottom: 0;
   right: 0;
+  margin-bottom: 2px;
+  margin-right: 2px;
+ }
+ 
+ .colorSelect {
+  position: absolute;
+  bottom: 0;
+  left: 0;
   margin-bottom: 2px;
   margin-right: 2px;
  }
@@ -99,4 +107,5 @@
 .Btn:active {
   transform: translate(2px ,2px);
 }
+
 

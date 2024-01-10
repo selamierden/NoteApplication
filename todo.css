@@ -1,0 +1,43 @@
+body {
+    width: 100%;
+    margin:auto;
+    min-height: 100px;
+}
+
+#container {
+    width: 580px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+#form {
+    background-color: white;
+    margin-top: 10px;
+    padding: 5px;      
+}
+#input {
+    height: 30px;
+    width: 520px;
+}
+#h3 {
+    display: flex;
+    justify-content: center;
+}
+#div1{
+    background-color: white;
+    width: 580px;
+    flex-direction: column;
+    display: flex;
+    margin: auto;
+}
+.div2{
+    
+    display: flex;
+    justify-content: space-between;
+}
+.div3{
+    display: flex;
+}
+#input2{
+    display: flex;
+}

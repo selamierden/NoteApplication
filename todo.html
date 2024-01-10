@@ -1,0 +1,94 @@
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" type="text/css" href="todo.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="dashboard.css" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div
+      class="settings-icon"
+      style="position: absolute; top: 10px; left: 10px; background-color: white"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+      >
+        <path d="M0 0h24v24H0z" fill="none" />
+        <path
+          d="M12 1c-1.1 0-2 .9-2 2s.9 2 2 2s2-.9 2-2s-.9-2-2-2zm0 7c-1.1 0-2 .9-2 2s.9 2 2 2s2-.9 2-2s-.9-2-2-2zm0 7c-1.1 0-2 .9-2 2s.9 2 2 2s2-.9 2-2s-.9-2-2-2z"
+        />
+      </svg>
+      <div
+        class="settings-menu"
+        style="display: none; background: white; padding: 1px"
+      >
+        <button
+          style="
+            padding: 0.75rem 1rem;
+            font-size: inherit;
+            background-color: #ffffff;
+            border: 1px solid rgb(209, 213, 219);
+          "
+          id="deleteAccountBtn"
+        >
+          Hesabımı Sil
+        </button>
+        <button
+          style="
+            padding: 0.75rem 1rem;
+            font-size: inherit;
+            background-color: #ffffff;
+            border: 1px solid rgb(209, 213, 219);
+          "
+          id="forProgrammersBtn"
+        >
+          For Programmers
+        </button>
+        <button
+          style="
+            padding: 0.75rem 1rem;
+            font-size: inherit;
+            background-color: #ffffff;
+            border: 1px solid rgb(209, 213, 219);
+          "
+          id="forClassicBtn"
+        >
+          Classics
+        </button>
+      </div>
+    </div>
+
+    <div id="welcome-div" style="margin-top: 50px">
+      <p>Welcome <span id="isim"></span></p>
+      <p>This is a secure area only accessible by authorized users.</p>
+    </div>
+
+    <div id="container">
+      <form id="form">
+        <h1 id="h3">To Do List</h1>
+        <div id="giris">
+          <input style="border-radius: 3px;" id="input" placeholder="Neler yapacaksın ?" />
+          <button style="background-color: black; color: white; border-radius: 2px;">Add</button>
+        </div>
+      </form>
+    </div>
+
+    <div id="div1"></div>
+
+    <script src="todo.js"></script>
+  </body>
+</html>
